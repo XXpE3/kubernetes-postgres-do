@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-postgres-config
+  labels:
+    app: postgres
+data:
+  POSTGRES_DB: replace_with_your_maintenance_db
+  POSTGRES_USER: replace_with_your_user
+  POSTGRES_PASSWORD: replace_with_your_user_password
+  PGDATA: /var/lib/postgresql/data/pgdata # the last sub dir is needed due postgres docker plugins

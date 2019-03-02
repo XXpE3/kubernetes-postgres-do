@@ -11,7 +11,7 @@ Run postgresql in DigitalOcean Kubernetes with persistent volume claim
 ## How to
 1. Make sure you have access to your clusters
    ```bash
-        kubectl --kubeconfig="path_to_your_kubeconfig.yaml" get nodes
+    kubectl --kubeconfig="path_to_your_kubeconfig.yaml" get nodes
     ```
 
     It will list of all your kubernetes cluster's nodes
@@ -46,6 +46,6 @@ Run postgresql in DigitalOcean Kubernetes with persistent volume claim
     ```
 
 7. Finished! Now you can access your postgres throug external ip address in Service and his port
-   For example: 192.xxx.xx:50432 and use postgres credentials that we set up through configmap.yaml
+   For example: 192.xxx.xx:5432 and use postgres credentials that we set up through configmap.yaml
 
 8. Support by star this repository ;)
